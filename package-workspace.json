@@ -1,0 +1,37 @@
+{
+  "name": "@thawee/pi-openai-sync-workspace",
+  "version": "1.2.5",
+  "description": "OpenAI-compatible model registration and sync extension for Pi Coding Agent workspace",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "pi-extensions",
+    "openai",
+    "sync"
+  ],
+  "license": "MIT",
+  "author": "thawee",
+  "homepage": "https://github.com/thawee/pi-openai-sync",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thawee/pi-openai-sync"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "./scripts/build-tgz.sh"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "typescript": "^6.0.2"
+  },
+  "workspaces": [
+    "individual-packages/*"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  }
+}

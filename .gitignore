@@ -1,0 +1,8 @@
+.env
+.pi/*
+*.bak
+node_modules/
+.build-npm/
+*.backup
+*.zip
+dist/*

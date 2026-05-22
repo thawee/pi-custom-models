@@ -1,0 +1,6 @@
+# Exclude source code in npm publish
+*.ts
+*.map
+tests/
+tsconfig.json
+package-lock.json
